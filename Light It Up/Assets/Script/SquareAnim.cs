@@ -6,11 +6,13 @@ using UnityEngine.Animations;
 public class SquareAnim : MonoBehaviour
 {
     public GameObject Anim;
+    public GameObject Player;
     public ParticleSystem Vfx;
+
     // Start is called before the first frame update
     void Start()
     {
-      //  Anim = GetComponent<Animator>();
+      
         Vfx.GetComponent<ParticleSystem>();
     }
 
@@ -24,10 +26,17 @@ public class SquareAnim : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            //  Anim.Play("Square fill");
-            Anim.SetActive(true);
-            StartCoroutine(enableVfx());
+            playAnim(Animation);
+           
         }
+    }
+
+    public Animation Animation { get; set; }
+
+    void playAnim(Animation fill)
+    {
+        Anim.SetActive(true);
+        StartCoroutine(enableVfx());
     }
 
     IEnumerator enableVfx()
@@ -36,4 +45,6 @@ public class SquareAnim : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         Vfx.Stop();
     }
+
+    
 }
