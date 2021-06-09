@@ -1,0 +1,24 @@
+Base path: 'C:/Program Files/Unity/Hub/Editor/2020.1.3f1/Editor/2019.4.27f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2020.1.3f1/Editor/2019.4.27f1/Editor/Data/PlaybackEngines'
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl(1075): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(127): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(128): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(129): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(130): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(150): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(344): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(351): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(486): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(117): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(119): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(127): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(129): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(207): conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(218): 'TransformWorldToTangent': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/ScreenSpaceLighting/GTAOCommon.hlsl(140): 'PackFloatToUInt': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/ScreenSpaceLighting/GTAOCommon.hlsl(141): 'PackFloatToUInt': conversion from larger type to smaller, possible loss of data
+  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/ShaderLibrary/ShaderVariablesFunctions.hlsl(122): 'CreateTangentToWorld': conversion from larger type to smaller, possible loss of data
+  api=18 insize=10587 outsize=13289 ok=1
+Cmd: initializeCompiler
+Cmd: shutdown

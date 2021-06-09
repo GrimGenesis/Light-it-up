@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 32c727076e7e83045b8b563931e5f4eb
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Reglisse
+  fontNames:
+  - Reglisse
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 4179822ec51029040a379045b735bdda, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
