@@ -1,24 +1,89 @@
 Base path: 'C:/Program Files/Unity/Hub/Editor/2020.1.3f1/Editor/2019.4.27f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2020.1.3f1/Editor/2019.4.27f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
 Cmd: compileComputeKernel
-  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Common.hlsl(1075): conversion from larger type to smaller, possible loss of data
-  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(127): conversion from larger type to smaller, possible loss of data
-  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(128): conversion from larger type to smaller, possible loss of data
-  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(129): conversion from larger type to smaller, possible loss of data
-  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(130): conversion from larger type to smaller, possible loss of data
-  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(150): conversion from larger type to smaller, possible loss of data
-  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(344): conversion from larger type to smaller, possible loss of data
-  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(351): conversion from larger type to smaller, possible loss of data
-  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/Packing.hlsl(486): conversion from larger type to smaller, possible loss of data
-  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(117): conversion from larger type to smaller, possible loss of data
-  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(119): conversion from larger type to smaller, possible loss of data
-  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(127): conversion from larger type to smaller, possible loss of data
-  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(129): conversion from larger type to smaller, possible loss of data
-  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(207): conversion from larger type to smaller, possible loss of data
-  error: 1 plat 18 at Packages/com.unity.render-pipelines.core/ShaderLibrary/SpaceTransforms.hlsl(218): 'TransformWorldToTangent': conversion from larger type to smaller, possible loss of data
-  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/ScreenSpaceLighting/GTAOCommon.hlsl(140): 'PackFloatToUInt': conversion from larger type to smaller, possible loss of data
-  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/Lighting/ScreenSpaceLighting/GTAOCommon.hlsl(141): 'PackFloatToUInt': conversion from larger type to smaller, possible loss of data
-  error: 1 plat 18 at Packages/com.unity.render-pipelines.high-definition/Runtime/ShaderLibrary/ShaderVariablesFunctions.hlsl(122): 'CreateTangentToWorld': conversion from larger type to smaller, possible loss of data
-  api=18 insize=10587 outsize=35126 ok=1
-Cmd: initializeCompiler
+  error: 1 plat 18 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 18 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 18 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 18 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+  api=18 insize=106449 outsize=2416 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 9 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 9 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 9 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 9 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+  api=9 insize=106449 outsize=2116 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 9 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 9 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 9 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 9 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+  api=9 insize=106449 outsize=1036 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 9 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 9 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 9 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 9 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+  api=9 insize=106449 outsize=4081 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 9 at (0): Buffer count exceeding default GL_MAX_SHADER_STORAGE_BUFFER_BINDINGS. Shader might not work on all hw. Consider combining separate buffers into one containing struct elements.
+  error: 1 plat 9 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 9 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 9 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 9 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+  api=9 insize=106449 outsize=6458 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 9 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 9 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 9 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 9 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+  api=9 insize=106449 outsize=4226 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 9 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 9 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 9 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 9 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+  error: 1 plat 9 at SoftEffectsCompute.compute(2356): integer divides may be much slower, try using uints if possible.
+  api=9 insize=106449 outsize=7498 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+  api=4 insize=106449 outsize=1448 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+  api=4 insize=106449 outsize=1893 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+  api=4 insize=106449 outsize=544 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+  api=4 insize=106449 outsize=1479 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+  api=4 insize=106449 outsize=1444 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+  api=4 insize=106449 outsize=830 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at SoftEffectsCompute.compute(674): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(722): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(769): implicit truncation of vector type
+  error: 1 plat 4 at SoftEffectsCompute.compute(817): implicit truncation of vector type
+  api=4 insize=106449 outsize=852 ok=1
 Cmd: shutdown

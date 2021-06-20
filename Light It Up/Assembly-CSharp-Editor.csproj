@@ -64,6 +64,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\JMO Assets\Cartoon FX Easy Editor\Editor\CFXEasyEditor.cs" />
+    <Compile Include="Assets\PinwheelFantasyEffect\Script\Editor\CompileLogger.cs" />
+    <Compile Include="Assets\PinwheelFantasyEffect\Script\Editor\PolarisV2AdsWindow.cs" />
+    <Compile Include="Assets\SoftEffects\Scripts\Editor\SoftEffectsEditor.cs" />
+    <Compile Include="Assets\SoftEffects\Scripts\Editor\SoftEffectsFontEditor.cs" />
     <Compile Include="Assets\Star Pack\Editor\ParticleStandardGlowShaderGUI.cs" />
     <Compile Include="Assets\Star Pack\Editor\StarPackShaderGUI.cs" />
     <Reference Include="UnityEngine">
@@ -663,6 +667,9 @@
     <Reference Include="Unity.2D.SpriteShape.Editor">
       <HintPath>D:/Github/Light-it-up/Light It Up/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VisualEffectGraph.Runtime">
+      <HintPath>D:/Github/Light-it-up/Light It Up/Library/ScriptAssemblies/Unity.VisualEffectGraph.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Github/Light-it-up/Light It Up/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -731,6 +738,9 @@
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
       <HintPath>D:/Github/Light-it-up/Light It Up/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualEffectGraph.Editor">
+      <HintPath>D:/Github/Light-it-up/Light It Up/Library/ScriptAssemblies/Unity.VisualEffectGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>D:/Github/Light-it-up/Light It Up/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>

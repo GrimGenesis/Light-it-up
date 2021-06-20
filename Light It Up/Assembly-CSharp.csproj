@@ -73,16 +73,31 @@
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutoRotate.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightFlicker.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightIntensityFade.cs" />
+    <Compile Include="Assets\PinwheelFantasyEffect\Script\DemoManager.cs" />
+    <Compile Include="Assets\PinwheelFantasyEffect\Script\FairyDustRandomPosition.cs" />
+    <Compile Include="Assets\PinwheelFantasyEffect\Script\FairyMeteorAddForceDemo.cs" />
+    <Compile Include="Assets\PinwheelFantasyEffect\Script\Fireball.cs" />
+    <Compile Include="Assets\PinwheelFantasyEffect\Script\Spin.cs" />
+    <Compile Include="Assets\PinwheelFantasyEffect\Script\Test.cs" />
     <Compile Include="Assets\Sci-Fi UI\Demo_Assets\scripts\GUI_Demo.cs" />
-    <Compile Include="Assets\Script\Obs\CircleAnim.cs" />
-    <Compile Include="Assets\Script\Obs\DiamondAnim.cs" />
-    <Compile Include="Assets\Script\Obs\SquareAnim.cs" />
-    <Compile Include="Assets\Script\Obs\TriangeAnim.cs" />
+    <Compile Include="Assets\Script\Obs\Lvl 1\Boxanim.cs" />
+    <Compile Include="Assets\Script\Obs\Lvl 4\CircleAnim.cs" />
+    <Compile Include="Assets\Script\Obs\Lvl 4\DiamondAnim.cs" />
+    <Compile Include="Assets\Script\Obs\Lvl 4\SquareAnim.cs" />
+    <Compile Include="Assets\Script\Obs\Lvl 4\TriangeAnim.cs" />
     <Compile Include="Assets\Script\Ui\MainMenu.cs" />
+    <Compile Include="Assets\Script\Ui\MusicPlayer.cs" />
     <Compile Include="Assets\Script\Ui\PauseMenu.cs" />
     <Compile Include="Assets\Script\player\ButtonJump.cs" />
     <Compile Include="Assets\Script\player\Jumpplayer.cs" />
     <Compile Include="Assets\Script\player\playerJump.cs" />
+    <Compile Include="Assets\SoftEffects\Scripts\CGHolder.cs" />
+    <Compile Include="Assets\SoftEffects\Scripts\ClassExtensions.cs" />
+    <Compile Include="Assets\SoftEffects\Scripts\GPUWorker.cs" />
+    <Compile Include="Assets\SoftEffects\Scripts\PrintData.cs" />
+    <Compile Include="Assets\SoftEffects\Scripts\SoftEffects.cs" />
+    <Compile Include="Assets\SoftEffects\Scripts\SoftEffectsFont.cs" />
+    <Compile Include="Assets\SoftEffects\Scripts\Styles.cs" />
     <Compile Include="Assets\Star Pack\Samples\Star Pack Demo\Scripts\ActivateDepthRendering.cs" />
     <Compile Include="Assets\Star Pack\Samples\Star Pack Demo\Scripts\Spin.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
@@ -121,6 +136,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\SoftEffects\Shaders\SoftShaderFont.shader" />
     <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFX3 Multiply Color.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\JMO Assets\Cartoon FX\CartoonFX Free.txt" />
@@ -130,6 +146,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\JMO Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\SoftEffects\Shaders\SoftEffectsCompute.compute" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -137,7 +154,9 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\SoftEffects\Shaders\SoftShaderSpriteWithShadows.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\PinwheelFantasyEffect\README.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFXM_MobileParticleAdd_Alpha8.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
@@ -145,8 +164,10 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\SoftEffects\Shaders\SoftEditShader.shader" />
     <None Include="Assets\Star Pack\Runtime\Shaders\Particle Standard Glow.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\SoftEffects\Shaders\SoftShaderFontWithShadows.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.3f1/Editor/2019.4.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -700,6 +721,9 @@
     <Reference Include="Unity.2D.SpriteShape.Editor">
       <HintPath>D:/Github/Light-it-up/Light It Up/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VisualEffectGraph.Runtime">
+      <HintPath>D:/Github/Light-it-up/Light It Up/Library/ScriptAssemblies/Unity.VisualEffectGraph.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/Github/Light-it-up/Light It Up/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
@@ -768,6 +792,9 @@
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
       <HintPath>D:/Github/Light-it-up/Light It Up/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualEffectGraph.Editor">
+      <HintPath>D:/Github/Light-it-up/Light It Up/Library/ScriptAssemblies/Unity.VisualEffectGraph.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ShaderGraph.Editor">
       <HintPath>D:/Github/Light-it-up/Light It Up/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
