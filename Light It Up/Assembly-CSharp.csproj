@@ -90,6 +90,7 @@
     <Compile Include="Assets\Script\Ui\PauseMenu.cs" />
     <Compile Include="Assets\Script\player\ButtonJump.cs" />
     <Compile Include="Assets\Script\player\Jumpplayer.cs" />
+    <Compile Include="Assets\Script\player\PlayerMove.cs" />
     <Compile Include="Assets\Script\player\playerJump.cs" />
     <Compile Include="Assets\SoftEffects\Scripts\CGHolder.cs" />
     <Compile Include="Assets\SoftEffects\Scripts\ClassExtensions.cs" />
