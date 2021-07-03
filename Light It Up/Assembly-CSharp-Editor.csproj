@@ -47,6 +47,7 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
+    <UnityProjectGeneratorVersion>4.10.3.0</UnityProjectGeneratorVersion>
     <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>Android:13</UnityBuildTarget>
     <UnityVersion>2019.4.27f1</UnityVersion>
@@ -66,8 +67,6 @@
     <Compile Include="Assets\JMO Assets\Cartoon FX Easy Editor\Editor\CFXEasyEditor.cs" />
     <Compile Include="Assets\PinwheelFantasyEffect\Script\Editor\CompileLogger.cs" />
     <Compile Include="Assets\PinwheelFantasyEffect\Script\Editor\PolarisV2AdsWindow.cs" />
-    <Compile Include="Assets\SoftEffects\Scripts\Editor\SoftEffectsEditor.cs" />
-    <Compile Include="Assets\SoftEffects\Scripts\Editor\SoftEffectsFontEditor.cs" />
     <Compile Include="Assets\Star Pack\Editor\ParticleStandardGlowShaderGUI.cs" />
     <Compile Include="Assets\Star Pack\Editor\StarPackShaderGUI.cs" />
     <Reference Include="UnityEngine">

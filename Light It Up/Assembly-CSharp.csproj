@@ -47,6 +47,7 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
+    <UnityProjectGeneratorVersion>4.10.3.0</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>Android:13</UnityBuildTarget>
     <UnityVersion>2019.4.27f1</UnityVersion>
@@ -63,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_New.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDir.cs" />
@@ -80,25 +82,29 @@
     <Compile Include="Assets\PinwheelFantasyEffect\Script\Spin.cs" />
     <Compile Include="Assets\PinwheelFantasyEffect\Script\Test.cs" />
     <Compile Include="Assets\Sci-Fi UI\Demo_Assets\scripts\GUI_Demo.cs" />
+    <Compile Include="Assets\Script\CollectionSystem.cs" />
     <Compile Include="Assets\Script\Obs\Lvl 1\Boxanim.cs" />
     <Compile Include="Assets\Script\Obs\Lvl 4\CircleAnim.cs" />
     <Compile Include="Assets\Script\Obs\Lvl 4\DiamondAnim.cs" />
     <Compile Include="Assets\Script\Obs\Lvl 4\SquareAnim.cs" />
     <Compile Include="Assets\Script\Obs\Lvl 4\TriangeAnim.cs" />
+    <Compile Include="Assets\Script\StarCollection.cs" />
+    <Compile Include="Assets\Script\Ui\Level.cs" />
+    <Compile Include="Assets\Script\Ui\LevelNew.cs" />
+    <Compile Include="Assets\Script\Ui\LevelSelector.cs" />
+    <Compile Include="Assets\Script\Ui\Levels.cs" />
     <Compile Include="Assets\Script\Ui\MainMenu.cs" />
+    <Compile Include="Assets\Script\Ui\MovetoNext.cs" />
     <Compile Include="Assets\Script\Ui\MusicPlayer.cs" />
     <Compile Include="Assets\Script\Ui\PauseMenu.cs" />
+    <Compile Include="Assets\Script\Ui\StarCollect.cs" />
+    <Compile Include="Assets\Script\Ui\Title.cs" />
+    <Compile Include="Assets\Script\Ui\WinLose.cs" />
     <Compile Include="Assets\Script\player\ButtonJump.cs" />
     <Compile Include="Assets\Script\player\Jumpplayer.cs" />
     <Compile Include="Assets\Script\player\PlayerMove.cs" />
+    <Compile Include="Assets\Script\player\PlayerStick.cs" />
     <Compile Include="Assets\Script\player\playerJump.cs" />
-    <Compile Include="Assets\SoftEffects\Scripts\CGHolder.cs" />
-    <Compile Include="Assets\SoftEffects\Scripts\ClassExtensions.cs" />
-    <Compile Include="Assets\SoftEffects\Scripts\GPUWorker.cs" />
-    <Compile Include="Assets\SoftEffects\Scripts\PrintData.cs" />
-    <Compile Include="Assets\SoftEffects\Scripts\SoftEffects.cs" />
-    <Compile Include="Assets\SoftEffects\Scripts\SoftEffectsFont.cs" />
-    <Compile Include="Assets\SoftEffects\Scripts\Styles.cs" />
     <Compile Include="Assets\Star Pack\Samples\Star Pack Demo\Scripts\ActivateDepthRendering.cs" />
     <Compile Include="Assets\Star Pack\Samples\Star Pack Demo\Scripts\Spin.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
@@ -137,7 +143,6 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-    <None Include="Assets\SoftEffects\Shaders\SoftShaderFont.shader" />
     <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFX3 Multiply Color.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\JMO Assets\Cartoon FX\CartoonFX Free.txt" />
@@ -147,7 +152,6 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\JMO Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\SoftEffects\Shaders\SoftEffectsCompute.compute" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -155,7 +159,6 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\SoftEffects\Shaders\SoftShaderSpriteWithShadows.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\PinwheelFantasyEffect\README.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
@@ -165,10 +168,8 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-    <None Include="Assets\SoftEffects\Shaders\SoftEditShader.shader" />
     <None Include="Assets\Star Pack\Runtime\Shaders\Particle Standard Glow.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
-    <None Include="Assets\SoftEffects\Shaders\SoftShaderFontWithShadows.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.3f1/Editor/2019.4.27f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

@@ -39,4 +39,7 @@ public class Jumpplayer : MonoBehaviour
         rb.velocity += dir * jumpPower;
 
     }
+
+       // Let the rigidbody take control and detect collisions.
+    
 }
