@@ -64,7 +64,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_New.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDir.cs" />
@@ -82,29 +81,29 @@
     <Compile Include="Assets\PinwheelFantasyEffect\Script\Spin.cs" />
     <Compile Include="Assets\PinwheelFantasyEffect\Script\Test.cs" />
     <Compile Include="Assets\Sci-Fi UI\Demo_Assets\scripts\GUI_Demo.cs" />
-    <Compile Include="Assets\Script\CollectionSystem.cs" />
+    <Compile Include="Assets\Script\LevelCam\LevelCam.cs" />
     <Compile Include="Assets\Script\Obs\Lvl 1\Boxanim.cs" />
     <Compile Include="Assets\Script\Obs\Lvl 4\CircleAnim.cs" />
     <Compile Include="Assets\Script\Obs\Lvl 4\DiamondAnim.cs" />
     <Compile Include="Assets\Script\Obs\Lvl 4\SquareAnim.cs" />
     <Compile Include="Assets\Script\Obs\Lvl 4\TriangeAnim.cs" />
-    <Compile Include="Assets\Script\StarCollection.cs" />
-    <Compile Include="Assets\Script\Ui\Level.cs" />
-    <Compile Include="Assets\Script\Ui\LevelNew.cs" />
+    <Compile Include="Assets\Script\Ui\CollectionSystem.cs" />
     <Compile Include="Assets\Script\Ui\LevelSelector.cs" />
     <Compile Include="Assets\Script\Ui\Levels.cs" />
     <Compile Include="Assets\Script\Ui\MainMenu.cs" />
-    <Compile Include="Assets\Script\Ui\MovetoNext.cs" />
+    <Compile Include="Assets\Script\Ui\MoveToNext.cs" />
     <Compile Include="Assets\Script\Ui\MusicPlayer.cs" />
+    <Compile Include="Assets\Script\Ui\NxtLvl.cs" />
     <Compile Include="Assets\Script\Ui\PauseMenu.cs" />
-    <Compile Include="Assets\Script\Ui\StarCollect.cs" />
+    <Compile Include="Assets\Script\Ui\Star.cs" />
+    <Compile Include="Assets\Script\Ui\StarCollection.cs" />
     <Compile Include="Assets\Script\Ui\Title.cs" />
+    <Compile Include="Assets\Script\Ui\Trial\LevelSystemManager.cs" />
     <Compile Include="Assets\Script\Ui\WinLose.cs" />
-    <Compile Include="Assets\Script\player\ButtonJump.cs" />
+    <Compile Include="Assets\Script\player\Gamemanager.cs" />
     <Compile Include="Assets\Script\player\Jumpplayer.cs" />
-    <Compile Include="Assets\Script\player\PlayerMove.cs" />
-    <Compile Include="Assets\Script\player\PlayerStick.cs" />
-    <Compile Include="Assets\Script\player\playerJump.cs" />
+    <Compile Include="Assets\Script\player\Player.cs" />
+    <Compile Include="Assets\Script\player\Trajectory.cs" />
     <Compile Include="Assets\Star Pack\Samples\Star Pack Demo\Scripts\ActivateDepthRendering.cs" />
     <Compile Include="Assets\Star Pack\Samples\Star Pack Demo\Scripts\Spin.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />

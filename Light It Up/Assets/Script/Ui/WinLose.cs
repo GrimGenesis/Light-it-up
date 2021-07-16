@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class WinLose : MonoBehaviour
 {
-    public GameObject stars;
+    //public GameObject stars;
     public GameObject winScene;
     public GameObject loseScene;
 
+
+   
     public void Next()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -22,6 +24,6 @@ public class WinLose : MonoBehaviour
     public void Levels()
     {
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Levels");
     }
 }

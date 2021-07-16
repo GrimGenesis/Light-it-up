@@ -2,31 +2,43 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-public class MovetoNext : MonoBehaviour
+public class MoveToNext : MonoBehaviour
 {
-    public GameObject[] Shapes;
-    public PolygonCollider2D shapeCol;
+  //  public int nextSceneLoad;
+    public GameObject[] shapeAnim;
+    public bool animActive = false;
+    public GameObject player;
+    public GameObject shapes;
+    public GameObject wincCanvas;
 
-    private void Start()
+    // Start is called before the first frame update
+    void Start()
     {
-        shapeCol = GetComponent<PolygonCollider2D>();
+   //     nextSceneLoad = SceneManager.GetActiveScene().buildIndex + 1;
+        shapeAnim = GameObject.FindGameObjectsWithTag("Anim");
     }
 
-    private void Update()
+    public void OnCollisionEnter2D(Collision2D other)
     {
-        for(int i = 0; i < Shapes.Length; i++)
+        if (other.gameObject.tag == "Player")
         {
-
-        }
-    }
-
-    public void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.gameObject.tag == "Player")
-        {
+          for(int i =0; i<shapeAnim.Length; i++)
+            {
+                if(shapeAnim[i].activeInHierarchy)
+                {
+                    animActive = true;
+                }
+            }
             
+          if(animActive == true)
+            {
+                Time.timeScale = 0f;
+                player.SetActive(false);
+                shapes.SetActive(false);
+                GetComponent<Star>().StarCollected();
+                wincCanvas.SetActive(true);
+            }
+
         }
     }
-
 }

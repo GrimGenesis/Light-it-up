@@ -10,6 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4078456513513428688}
   - component: {fileID: 4078456513513428691}
+  - component: {fileID: 1567443396}
+  - component: {fileID: 1567443397}
+  - component: {fileID: 1567443398}
   m_Layer: 0
   m_Name: CanvasManager
   m_TagString: Untagged
@@ -43,5 +46,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 979f17c2d877e9747b7b074460af12d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenu: {fileID: 2588933243718567156, guid: d2e08746133950048949ebb74b921ac8,
-    type: 3}
+  pauseMenu: {fileID: 0}
+--- !u!114 &1567443396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4078456513513428689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7940368d368b0e441a4367d4d5dd5586, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stars:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &1567443397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4078456513513428689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 434d2e250fd984b4ab19f3d50cd66d01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 0}
+  trajectory: {fileID: 0}
+  pushForce: 4
+--- !u!114 &1567443398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4078456513513428689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f359514e9bf9744bac5aa0ef6be882d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winScene: {fileID: 0}
+  loseScene: {fileID: 0}

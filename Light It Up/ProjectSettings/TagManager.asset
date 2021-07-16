@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - VFX
   - Star
+  - Anim
   layers:
   - Default
   - TransparentFX

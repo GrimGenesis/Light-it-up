@@ -1,17 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Jumpplayer : MonoBehaviour
 {
     public float speed = 5;
     private Rigidbody2D rb;
     public float jumpPower;
+    public int shapeCount ;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        //shapeCount = GameObject.FindGameObjectsWithTag("Enemy").Length;
+        shapeCount = 0;
+        setCount();
     }
 
     // Update is called once per frame
@@ -40,6 +45,33 @@ public class Jumpplayer : MonoBehaviour
 
     }
 
-       // Let the rigidbody take control and detect collisions.
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+       /* if(collision.gameObject.tag == "Enemy")
+        {
+            shapeCount--;
+
+            if(shapeCount == 0)
+            {
+                SceneManager.LoadScene("Win Lose");
+            }
+        }*/
+
+        if(collision.gameObject.CompareTag("Enemy"))
+        {
+            shapeCount = shapeCount + 1;
+            setCount();
+        }
+    }
+
+    public void setCount()
+    {
+        if(shapeCount >= 5)
+        {
+            SceneManager.LoadScene("Win Lose");
+        }
+    }
+
     
+
 }
